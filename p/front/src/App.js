@@ -5,27 +5,12 @@ import axios from "axios";
 import CV from "./CV.pdf"
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import toast, { Toaster } from 'react-hot-toast';
-
 import { Details } from './Deatils'
-import { gapi } from "gapi-script";
-
 import Fbcomments from "./Fbcomments";
 import ContactForm from "./OAuth/ContactForm";
 
-// const ClientID = process.env.REACT_APP_CLIENT_ID
-
 function App() {
-  // useEffect(()=>{
-  //   function start(){
-  //     gapi.client.init({
-  //       clientID : ClientID,
-  //       scope:""
-  //     })
-  //   };
-  //   gapi.load("client:auth2",start);
-  // })
   const [Light, setToDark] = useState(true)
-  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const projet1 = <Cards 
